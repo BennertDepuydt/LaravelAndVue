@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+$gray: #F4F4F4;
+$white: #ffffff;
+$black: #2B3643;
+$primary: #EF5D50;
+$secondary: #3241E4;
+
+$bg-white: $white;
+
+$font-family-base: "Roboto", -apple-system, BlinkMacSystemFont, "Segoe UI", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif !default;;
+
+        //#ECF2FE;
+
+
+//alles hiervoor krijgt voorrang op bootstrap
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~bootstrap-vue/src/index.scss';
+
+//media
+$bp-phone: 390px;
+
+
+

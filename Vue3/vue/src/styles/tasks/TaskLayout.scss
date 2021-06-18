@@ -1,0 +1,18 @@
+@import "../variables";
+
+.tasks-title-selectable {
+  cursor: pointer;
+  &:hover {
+    font-weight: bold !important;
+  }
+}
+.thumpsup {
+  color: blue;
+}
+.thumpsdown {
+  color: red;
+}
+
+@media (min-width: $bp-phone) {
+
+}

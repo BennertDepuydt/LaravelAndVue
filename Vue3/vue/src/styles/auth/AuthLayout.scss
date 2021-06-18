@@ -1,0 +1,18 @@
+@import "../variables";
+
+.auth-card {
+  width: 400px;
+  height: 500px;
+  padding: 10px;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $white;
+  border: none;
+}
+
+@media (min-width: $bp-phone) {
+  width: 95vw;
+  height: 100%;
+}

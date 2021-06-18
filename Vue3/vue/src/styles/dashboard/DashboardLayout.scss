@@ -1,0 +1,93 @@
+@import "../variables";
+@import "../common";
+/*.router-link-active {
+  border-bottom: 1px solid #EF5D50;
+}*/
+
+@function set-text-color($color) {
+  @if (lightness( $color ) > 40) {
+    @return $black;
+  }
+  @else {
+    @return $white;
+  }
+}
+
+.min-loading-height {
+  height: 450px;
+  width: 100%;
+}
+
+.dashboard-title-selectable {
+  cursor: pointer;
+  &:hover {
+    font-weight: bold !important;
+  }
+}
+
+.text-black {
+  color: $black !important;
+}
+
+.bg-gray{
+  background-color:$gray;
+}
+
+.bg-header{
+  background-color: $white;
+}
+
+.card {
+  background-color: $gray !important;
+}
+
+.auth-card {
+  background-color: $white !important;
+}
+
+.dashboard-small-card {
+  width: 100%;
+  height: 70px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+$red: #FFC1C1;
+$orange: #FFD5BE;
+$green: #C1FFC8;
+
+.difficulty-range-red {
+  background-color: $red;
+}
+
+.difficulty-range-orange {
+  background-color: $orange;
+}
+
+.difficulty-range-green {
+  background-color: $green;
+}
+
+.CompletedTaskBackground {
+  background-color: $green !important;
+  color: set-text-color($green);
+}
+
+.ProgressTaskBackground {
+  background-color: $orange !important;
+  color: set-text-color($orange);
+}
+
+.NotStartedTaskBackground {
+  background-color: $red !important;
+  color: set-text-color($red);
+}
+
+
+@media (min-width: $bp-phone) {
+  .bg-header {
+    width: 100vw;
+    height: 100%;
+  }
+}
